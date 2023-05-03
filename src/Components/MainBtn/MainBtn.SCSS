@@ -1,0 +1,13 @@
+.main-btn {
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  transition: 0.5s;
+  border-radius: 5px !important;
+  background: var(--redColor);
+  color: var(--whiteColor);
+  border: 2px solid var(--redColor);
+  &:hover {
+    background: var(--whiteColor);
+    color: var(--redColor);
+  }
+}

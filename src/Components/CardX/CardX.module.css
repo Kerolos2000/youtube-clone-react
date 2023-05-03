@@ -1,0 +1,30 @@
+.container {
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.divImg .imgX img {
+  width: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.divText h2 {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.divText p {
+  font-size: 14px;
+  color: #606060;
+  margin: 0.3rem 0;
+  word-wrap: break-word;
+}/*# sourceMappingURL=CardX.module.css.map */

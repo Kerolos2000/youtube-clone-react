@@ -1,0 +1,180 @@
+.right {
+  height: 100%;
+  padding-inline: 0;
+}
+.right .channelBanner {
+  height: 20vw;
+}
+@media (max-width: 991px) {
+  .right .channelBanner {
+    height: 30vw;
+  }
+}
+.right .channelBanner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.right .channelInfo .card {
+  padding: 2rem 1rem;
+  border: none;
+}
+.right .channelInfo .card .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.right .channelInfo .card .container .leftCard {
+  display: flex;
+  align-items: center;
+}
+.right .channelInfo .card .container .leftCard .img {
+  height: 128px !important;
+  width: 128px !important;
+}
+@media (max-width: 991px) {
+  .right .channelInfo .card .container .leftCard .img {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .right .channelInfo .card .container .leftCard .img {
+    height: 88px !important;
+    width: 88px !important;
+  }
+}
+.right .channelInfo .card .container .leftCard .img img {
+  border-radius: 50%;
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+  height: 128px !important;
+  width: 128px !important;
+}
+@media (max-width: 1200px) {
+  .right .channelInfo .card .container .leftCard .img img {
+    height: 88px !important;
+    width: 88px !important;
+  }
+}
+.right .channelInfo .card .container .leftCard .text {
+  text-align: start;
+}
+.right .channelInfo .card .container .leftCard .text > * {
+  margin-bottom: 0px;
+}
+.right .channelInfo .card .container .rightCard button {
+  border-radius: 50px;
+}
+.right .links {
+  position: relative;
+}
+.right .links::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #d3d3d3;
+}
+.right .links .swiperSlide {
+  display: flex;
+  justify-content: center;
+}
+.right .allPlatLists .containerx .row .allCard .card {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+}
+.right .allPlatLists .containerx .row .allCard .card .imgX {
+  box-shadow: 0 0 10px rgba(147, 31, 31, 0.3490196078);
+  border-radius: 10px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.right .allPlatLists .containerx .row .allCard .card .imgX .i {
+  max-width: 100%;
+  height: 100%;
+}
+.right .allPlatLists .containerx .row .allCard .card .imgX:hover .imgXAll {
+  opacity: 1;
+}
+.right .allPlatLists .containerx .row .allCard .card .imgX .imgXAll {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.right .allPlatLists .containerx .row .allCard .card .imgX .imgXright {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 390px) and (max-width: 576px) {
+  .right .allPlatLists .containerx .row .allCard .card .imgX {
+    height: 190px;
+  }
+}
+.right .allPlatLists .containerx .row .allCard .card .cardBody {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.right .allPlatLists .containerx .row .allCard .card .cardBody .h5 {
+  text-align: left;
+  font-size: 15px;
+}
+.right .allPlatLists .containerx .row .allCard .card .cardBody .a {
+  text-align: left;
+  padding: 0;
+}
+
+.p,
+.i {
+  margin: 0;
+  height: auto !important;
+  color: #fff !important;
+}
+
+.divX {
+  max-width: 50%;
+}
+.divX .description {
+  max-width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.img {
+  aspect-ratio: 16/9 !important;
+}
+
+@media (max-width: 576px) {
+  .img {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=Channel.module.css.map */

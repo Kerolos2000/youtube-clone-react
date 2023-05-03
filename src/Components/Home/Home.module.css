@@ -1,0 +1,9 @@
+.allCard .card .img {
+  border-radius: 10px;
+}
+.allCard .card .p {
+  font-size: 14px;
+  color: #606060;
+  margin: 0;
+  word-wrap: break-word;
+}/*# sourceMappingURL=Home.module.css.map */

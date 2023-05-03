@@ -1,0 +1,170 @@
+.offcanvas button,
+.containerFluid button {
+  min-width: unset !important;
+  border-radius: 50% !important;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.5rem !important;
+}
+@media (max-width: 571px) {
+  .offcanvas button,
+  .containerFluid button {
+    margin: 0.5rem !important;
+  }
+}
+@media (max-width: 340px) {
+  .offcanvas button,
+  .containerFluid button {
+    margin: 0 !important;
+  }
+}
+
+.containerFluid .left {
+  display: flex;
+  align-items: center;
+}
+.containerFluid .left .MenuIcon {
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+}
+@media (max-width: 571px) {
+  .containerFluid .left {
+    order: 1;
+  }
+}
+.containerFluid .med {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 571px) {
+  .containerFluid .med {
+    width: 100%;
+  }
+}
+.containerFluid .med .mainSearch {
+  border-radius: 50px 0 0 50px;
+  height: 40px;
+  box-shadow: none;
+  outline: none;
+  padding: 5px 20px;
+  width: 540px;
+}
+@media (max-width: 991px) {
+  .containerFluid .med .mainSearch {
+    width: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .containerFluid .med .mainSearch {
+    width: 200px;
+  }
+}
+@media (max-width: 571px) {
+  .containerFluid .med .mainSearch {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
+.containerFluid .med .mainBtn {
+  border-radius: 0 50px 50px 0 !important;
+  height: 40px;
+  width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f8f8;
+  border: 1px solid var(--redColor);
+  margin: 0 !important;
+}
+.containerFluid .med .mic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #f9f9f9;
+  border-radius: 50% !important;
+  -webkit-margin-start: 1rem;
+          margin-inline-start: 1rem;
+}
+@media (max-width: 991px) {
+  .containerFluid .med .mic {
+    display: none;
+  }
+}
+@media (max-width: 571px) {
+  .containerFluid .med {
+    order: 3;
+  }
+}
+@media (max-width: 571px) {
+  .containerFluid .right {
+    order: 2;
+  }
+}
+
+.logo {
+  max-width: 5.625rem;
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.offcanvas {
+  width: 240px !important;
+}
+.offcanvas .header {
+  justify-content: start;
+  padding-bottom: 0;
+}
+.offcanvas .body {
+  padding-block: 0;
+}
+.offcanvas .body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.offcanvas .body::-webkit-scrollbar-thumb {
+  background-color: var(--redColor);
+}
+.offcanvas .body::-webkit-scrollbar-thumb:hover {
+  background-color: #a50000;
+}
+.offcanvas .body > * {
+  width: 100%;
+}
+.offcanvas .body > * > button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0.5rem 0 !important;
+  border-radius: 5px !important;
+}
+.offcanvas .body > * > button > a > svg {
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+
+.dropdownDivider {
+  border-top: 1px solid var(--grayColor);
+}
+
+.part7, .part8 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
+}
+.part7 a, .part8 a {
+  margin: 0 0.2rem;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.part7 a:hover, .part8 a:hover {
+  opacity: 1;
+}/*# sourceMappingURL=Navbar.module.css.map */

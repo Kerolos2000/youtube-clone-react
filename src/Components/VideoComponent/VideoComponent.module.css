@@ -1,0 +1,31 @@
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details .chanalDetails {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.p {
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.yourComment {
+  display: flex;
+  align-items: flex-end;
+}
+
+.input {
+  border: none !important;
+}
+
+.otherComment {
+  display: flex;
+}
+.otherComment .commentDetails .userName {
+  display: flex;
+}/*# sourceMappingURL=VideoComponent.module.css.map */
