@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/youtube-clone-react/static/css/main.c79f2ff0.css",
-    "main.js": "/youtube-clone-react/static/js/main.851daee5.js",
+    "main.js": "/youtube-clone-react/static/js/main.9ee804a5.js",
     "static/media/fa-solid-900.ttf": "/youtube-clone-react/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/fa-brands-400.ttf": "/youtube-clone-react/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
     "static/media/fa-solid-900.woff2": "/youtube-clone-react/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
@@ -14,10 +14,10 @@
     "static/media/fa-v4compatibility.woff2": "/youtube-clone-react/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/youtube-clone-react/index.html",
     "main.c79f2ff0.css.map": "/youtube-clone-react/static/css/main.c79f2ff0.css.map",
-    "main.851daee5.js.map": "/youtube-clone-react/static/js/main.851daee5.js.map"
+    "main.9ee804a5.js.map": "/youtube-clone-react/static/js/main.9ee804a5.js.map"
   },
   "entrypoints": [
     "static/css/main.c79f2ff0.css",
-    "static/js/main.851daee5.js"
+    "static/js/main.9ee804a5.js"
   ]
 }
