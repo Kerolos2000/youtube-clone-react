@@ -1,5 +1,6 @@
 {
-  "name": "chatgpt",
+  "homepage": "https://kerolos2000.github.io/youtube-clone-react",
+  "name": "youtube-clone-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -26,6 +27,7 @@
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.1.2",
+    "react-tsparticles": "^2.9.3",
     "styled-components": "^5.3.10",
     "swiper": "^9.2.4",
     "web-vitals": "^2.1.4",
@@ -33,6 +35,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

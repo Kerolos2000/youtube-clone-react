@@ -155,16 +155,19 @@
   border-top: 1px solid var(--grayColor);
 }
 
-.part7, .part8 {
+.part7,
+.part8 {
   display: flex;
   flex-wrap: wrap;
   margin: 0.5rem 0;
 }
-.part7 a, .part8 a {
+.part7 a,
+.part8 a {
   margin: 0 0.2rem;
   opacity: 0.5;
   transition: 0.5s;
 }
-.part7 a:hover, .part8 a:hover {
+.part7 a:hover,
+.part8 a:hover {
   opacity: 1;
 }/*# sourceMappingURL=Navbar.module.css.map */

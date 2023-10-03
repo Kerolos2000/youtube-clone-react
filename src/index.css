@@ -237,4 +237,12 @@ iframe {
 
 .swiper-rtl .swiper-button-next {
   left: 0 !important;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+.navbar-nav > * {
+  margin: 0.5rem;
 }/*# sourceMappingURL=index.css.map */

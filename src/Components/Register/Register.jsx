@@ -16,7 +16,7 @@ export default function Register() {
     setIslaoding(true);
     setError(null);
     axios
-      .post(`https://route-ecommerce-app.vercel.app/api/v1/auth/signup`, data)
+      .post(`https://ecommerce.routemisr.com/api/v1/auth/signup`, data)
       .then((res) => {
         console.log(res.data);
         if (res.data.message === "success") {
@@ -68,7 +68,7 @@ export default function Register() {
       .oneOf([Yup.ref("password")], "rePassword don't Match Password"),
     phone: Yup.string()
       .required("Phone Nunber is Required")
-      .matches(/^01[0125][0-9]{8}$/, "Your Phone Number inValid"),
+      .matches(/^01[0125][0-9]{8}$/, "Enter valid Number Such 01[0125]xxxxxxxx"),
   });
 
   let formik = useFormik({

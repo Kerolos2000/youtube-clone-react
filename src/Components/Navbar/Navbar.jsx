@@ -56,9 +56,7 @@ export default function NavbarComponent() {
   const navigate = useNavigate();
   function x() {
     if (inputRef.current.value !== "") {
-      navigate(`/search/${inputRef.current.value}`);
-    } else {
-      console.log("else");
+      navigate(`/youtube-clone-react/search/${inputRef.current.value}`);
     }
   }
 
@@ -72,8 +70,6 @@ export default function NavbarComponent() {
   useEffect(() => {
     if (id !== "") {
       searchX.callApi(id);
-    } else {
-      console.log("nono");
     }
   }, [id]);
 
@@ -144,12 +140,18 @@ export default function NavbarComponent() {
           ) : (
             <Nav>
               <Nav.Item className="nav-item">
-                <NavLink className={`${style.navLink} nav-link`} to="/login">
+                <NavLink
+                  className={`${style.navLink} nav-link`}
+                  to="/youtube-clone-react/login"
+                >
                   Login
                 </NavLink>
               </Nav.Item>
               <Nav.Item className="nav-item">
-                <NavLink className={`${style.navLink} nav-link`} to="/register">
+                <NavLink
+                  className={`${style.navLink} nav-link`}
+                  to="/youtube-clone-react/register"
+                >
                   Register
                 </NavLink>
               </Nav.Item>

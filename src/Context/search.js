@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 export const search = createContext();
 
 export function SearchProvider(props) {
-  const key = "AIzaSyBVApomqeduLVm7DxeWO9_HPNpyb1v7gDw";
+  const key = "AIzaSyDxLg0QxECeZGluy1-7kaocA1m4Sm3RoTI";
   const [videos, setVideos] = useState([]);
   const [loader, setLoader] = useState(true);
   const [prams, setPrams] = useState("");

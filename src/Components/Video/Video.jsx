@@ -19,17 +19,17 @@ export default function Video() {
     loader: videoLoader,
     callApi: callVideoApi,
   } = useAxios(
-    `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${pramsId}&key=AIzaSyDxLg0QxECeZGluy1-7kaocA1m4Sm3RoTI`
+    `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${pramsId}&key=AIzaSyBVApomqeduLVm7DxeWO9_HPNpyb1v7gDw`
   );
   const { details: commentDetails, callApi: callCommentApi } = useAxios(
-    `https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=${pramsId}&key=AIzaSyDxLg0QxECeZGluy1-7kaocA1m4Sm3RoTI`
+    `https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=${pramsId}&key=AIzaSyBVApomqeduLVm7DxeWO9_HPNpyb1v7gDw`
   );
 
   let [dataSearch, setDataSearch] = useState([]);
   function x(channelId) {
     axios
       .get(
-        `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&maxResults=50&q=%22%22&key=AIzaSyDxLg0QxECeZGluy1-7kaocA1m4Sm3RoTI`
+        `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&maxResults=50&q=%22%22&key=AIzaSyBVApomqeduLVm7DxeWO9_HPNpyb1v7gDw`
       )
       .then((res) => {
         setDataSearch(res.data.items);

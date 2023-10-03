@@ -338,3 +338,12 @@ iframe {
 .swiper-rtl .swiper-button-next {
   left: 0 !important;
 }
+
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  &>*{
+    margin: 0.5rem;
+  }
+}

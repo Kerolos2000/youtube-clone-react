@@ -15,7 +15,7 @@ export default function Login() {
     setIslaoding(true);
     axios
       .put(
-        `https://route-ecommerce.onrender.com/api/v1/auth/resetPassword`,
+        `https://ecommerce.routemisr.com/api/v1/auth/resetPassword`,
         data
       )
       .then((res) => {
