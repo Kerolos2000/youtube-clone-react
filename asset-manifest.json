@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/youtube-clone-react/static/css/main.c79f2ff0.css",
-    "main.js": "/youtube-clone-react/static/js/main.2d4664fd.js",
+    "main.css": "/youtube-clone-react/static/css/main.35da7ff9.css",
+    "main.js": "/youtube-clone-react/static/js/main.b972cf71.js",
     "static/media/fa-solid-900.ttf": "/youtube-clone-react/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/fa-brands-400.ttf": "/youtube-clone-react/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
     "static/media/fa-solid-900.woff2": "/youtube-clone-react/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
@@ -13,11 +13,11 @@
     "static/media/YouTube_Logo_2017.svg.webp": "/youtube-clone-react/static/media/YouTube_Logo_2017.svg.8718309416a8094e3bd4.webp",
     "static/media/fa-v4compatibility.woff2": "/youtube-clone-react/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/youtube-clone-react/index.html",
-    "main.c79f2ff0.css.map": "/youtube-clone-react/static/css/main.c79f2ff0.css.map",
-    "main.2d4664fd.js.map": "/youtube-clone-react/static/js/main.2d4664fd.js.map"
+    "main.35da7ff9.css.map": "/youtube-clone-react/static/css/main.35da7ff9.css.map",
+    "main.b972cf71.js.map": "/youtube-clone-react/static/js/main.b972cf71.js.map"
   },
   "entrypoints": [
-    "static/css/main.c79f2ff0.css",
-    "static/js/main.2d4664fd.js"
+    "static/css/main.35da7ff9.css",
+    "static/js/main.b972cf71.js"
   ]
 }
