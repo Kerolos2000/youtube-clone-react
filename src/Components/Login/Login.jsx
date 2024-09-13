@@ -1,10 +1,10 @@
-import { Formik, useFormik } from "formik";
-import * as Yup from "yup";
-import React, { useRef, useState } from "react";
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom";
-import MainBtn from "../MainBtn/MainBtn";
+import { useFormik } from "formik";
+import React, { useRef, useState } from "react";
 import { Helmet } from "react-helmet";
+import { Link, useNavigate } from "react-router-dom";
+import * as Yup from "yup";
+import MainBtn from "../MainBtn/MainBtn";
 
 import { useContext } from "react";
 import { userDataContext } from "../../Context/userDataContext";
@@ -72,12 +72,16 @@ export default function Login() {
         <title>Login</title>
       </Helmet>
       <section className="container py-3" id="Register">
-        <h2>Login Now :</h2>
+        <h2>Login Now : </h2>
+        <div>
+          <p style={{marginBottom:"0"}}>username : kerolos1410@gmail.com</p>
+          <p>password : Admin123</p>
+        </div>
         {error ? <div className="alert h5 fw-bold">{error}</div> : null}
         <form onSubmit={formik.handleSubmit} className="form">
           <div className="mb-2">
             <label htmlFor="InputInput2" className="form-label fw-bolder">
-              Email :
+              Email : 
             </label>
             <input
               id="email"

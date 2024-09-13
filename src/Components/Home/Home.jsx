@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import style from "./Home.module.css";
-import { Link } from "react-router-dom";
-import { formatDistanceStrict } from "date-fns";
 import { Avatar, Button } from "@mui/material";
-import useAxios from "../../Hooks/useAxios";
-import Loader from "../Loader/Loader";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation } from "swiper";
-// Import Swiper styles
+import axios from "axios";
+import { formatDistanceStrict } from "date-fns";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
+import { FreeMode, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import useAxios from "../../Hooks/useAxios";
+import Loader from "../Loader/Loader";
+import style from "./Home.module.css";
 
 function HomePage() {
   let { details, loader, setDetails } = useAxios(
@@ -38,7 +36,7 @@ function HomePage() {
           console.error(error);
         });
     }
-  }, [selectedCategoryId]);
+  }, [selectedCategoryId, setDetails]);
 
   useEffect(() => {
     const url = `https://www.googleapis.com/youtube/v3/videoCategories?part=snippet&regionCode=EG&key=AIzaSyDxLg0QxECeZGluy1-7kaocA1m4Sm3RoTI`;
@@ -123,7 +121,7 @@ function HomePage() {
                       className="me-3 mt-1"
                       sx={{ width: 32, height: 32 }}
                     >
-                      {video.snippet.channelTitle.slice(0, 1)}
+                      
                     </Avatar>
                     <div>
                       <Link to={`/youtube-clone-react/video/${video.id}`}>

@@ -1,15 +1,15 @@
-import React from "react";
-import style from "./Channel.module.css";
 import PlayArrowOutlinedIcon from "@mui/icons-material/PlayArrowOutlined";
 import PlaylistPlayOutlinedIcon from "@mui/icons-material/PlaylistPlayOutlined";
 import SearchIcon from "@mui/icons-material/Search";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation } from "swiper";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
+import React from "react";
 import { Link, useParams } from "react-router-dom";
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+import { FreeMode, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import useAxios from "../../Hooks/useAxios";
+import style from "./Channel.module.css";
 export default function Channel() {
   const { id: pramsId } = useParams();
 

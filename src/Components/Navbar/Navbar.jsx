@@ -1,39 +1,39 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import { Link, NavLink, useNavigate, useParams } from "react-router-dom";
 
+import { Nav, NavDropdown } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-import { Nav, NavDropdown } from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
-import { Avatar, Button, Divider, ListItemIcon } from "@mui/material";
 import { Logout, Mic, Search, VideoCallOutlined } from "@mui/icons-material";
-import MenuIcon from "@mui/icons-material/Menu";
-import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import AutoAwesomeOutlinedIcon from "@mui/icons-material/AutoAwesomeOutlined";
-import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import VideoLibraryOutlinedIcon from "@mui/icons-material/VideoLibraryOutlined";
-import HistoryIcon from "@mui/icons-material/History";
-import WatchLaterOutlinedIcon from "@mui/icons-material/WatchLaterOutlined";
-import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
-import WhatshotOutlinedIcon from "@mui/icons-material/WhatshotOutlined";
-import MusicNoteOutlinedIcon from "@mui/icons-material/MusicNoteOutlined";
-import WifiTetheringOutlinedIcon from "@mui/icons-material/WifiTetheringOutlined";
-import SportsEsportsOutlinedIcon from "@mui/icons-material/SportsEsportsOutlined";
 import EmojiEventsOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
-import OutlinedFlagIcon from "@mui/icons-material/OutlinedFlag";
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import FeedbackOutlinedIcon from "@mui/icons-material/FeedbackOutlined";
+import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
+import HistoryIcon from "@mui/icons-material/History";
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import MenuIcon from "@mui/icons-material/Menu";
+import MusicNoteOutlinedIcon from "@mui/icons-material/MusicNoteOutlined";
+import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
+import OutlinedFlagIcon from "@mui/icons-material/OutlinedFlag";
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import SportsEsportsOutlinedIcon from "@mui/icons-material/SportsEsportsOutlined";
+import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
+import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
+import VideoLibraryOutlinedIcon from "@mui/icons-material/VideoLibraryOutlined";
+import WatchLaterOutlinedIcon from "@mui/icons-material/WatchLaterOutlined";
+import WhatshotOutlinedIcon from "@mui/icons-material/WhatshotOutlined";
+import WifiTetheringOutlinedIcon from "@mui/icons-material/WifiTetheringOutlined";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import { Avatar, Button, Divider, ListItemIcon } from "@mui/material";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import { search } from "../../Context/search";
+import { userDataContext } from "../../Context/userDataContext";
 import logo from "../../img/YouTube_Logo_2017.svg.webp";
 import avatar from "../../img/unnamed.jpg";
 import style from "./Navbar.module.css";
-import { search } from "../../Context/search";
-import { userDataContext } from "../../Context/userDataContext";
 
 export default function NavbarComponent() {
   const [show, setShow] = useState(false);
@@ -133,7 +133,6 @@ export default function NavbarComponent() {
                 className={style.MenuIcon}
               >
                 <Avatar sx={{ width: 32, height: 32 }}>
-                  {dataX?.data?.name.slice(0, 1)}
                 </Avatar>
               </Button>
             </div>
@@ -409,9 +408,7 @@ export default function NavbarComponent() {
         >
           <MenuItem onClick={handleClose}>
             <Link className="d-flex align-items-center">
-              <Avatar sx={{ width: 32, height: 32 }}>
-                {dataX?.data?.name.slice(0, 1)}
-              </Avatar>
+              <Avatar sx={{ width: 32, height: 32 }} />
               {dataX?.data?.name}
             </Link>
           </MenuItem>

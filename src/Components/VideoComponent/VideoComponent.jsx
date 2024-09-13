@@ -1,20 +1,21 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import style from "./VideoComponent.module.css";
-import { Avatar, Button, ButtonGroup } from "@mui/material";
-import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
-import ThumbDownOutlinedIcon from "@mui/icons-material/ThumbDownOutlined";
-import ShareIcon from "@mui/icons-material/Share";
 import ContentCutIcon from "@mui/icons-material/ContentCut";
-import PlaylistAddIcon from "@mui/icons-material/PlaylistAdd";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import PlaylistAddIcon from "@mui/icons-material/PlaylistAdd";
+import ShareIcon from "@mui/icons-material/Share";
+import ThumbDownOutlinedIcon from "@mui/icons-material/ThumbDownOutlined";
+import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
+import { Avatar, Button, ButtonGroup } from "@mui/material";
 import TextField from "@mui/material/TextField";
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/css";
-import { FreeMode } from "swiper";
 import { formatDistanceStrict } from "date-fns";
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+import { FreeMode } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import style from "./VideoComponent.module.css";
 
 export default function VideoComponent({
   videoDetails,
@@ -37,7 +38,7 @@ export default function VideoComponent({
   };
   return (
     <>
-      <iframe src={iframeURL}></iframe>
+      <iframe src={iframeURL} title="YouTube video player"/>
       {videoDetails?.items?.map((item, i) => (
         <div key={i}>
           <h5 className="my-2 fw-bold">{item.snippet.title}</h5>
