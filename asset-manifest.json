@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/youtube-clone-react/static/css/main.35da7ff9.css",
-    "main.js": "/youtube-clone-react/static/js/main.b972cf71.js",
-    "static/media/fa-solid-900.ttf": "/youtube-clone-react/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
-    "static/media/fa-brands-400.ttf": "/youtube-clone-react/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
-    "static/media/fa-solid-900.woff2": "/youtube-clone-react/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
-    "static/media/fa-brands-400.woff2": "/youtube-clone-react/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
-    "static/media/fa-regular-400.ttf": "/youtube-clone-react/static/media/fa-regular-400.d87474231f4192884802.ttf",
-    "static/media/fa-regular-400.woff2": "/youtube-clone-react/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "main.css": "/youtube-clone-react/static/css/main.0c643843.css",
+    "main.js": "/youtube-clone-react/static/js/main.df95b8c6.js",
+    "static/media/fa-solid-900.ttf": "/youtube-clone-react/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/fa-brands-400.ttf": "/youtube-clone-react/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/fa-solid-900.woff2": "/youtube-clone-react/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/fa-brands-400.woff2": "/youtube-clone-react/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/fa-regular-400.ttf": "/youtube-clone-react/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/fa-regular-400.woff2": "/youtube-clone-react/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
     "static/media/404 Error-pana.svg": "/youtube-clone-react/static/media/404 Error-pana.6ef338944b2fa144c70406dfff498cf4.svg",
-    "static/media/fa-v4compatibility.ttf": "/youtube-clone-react/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.ttf": "/youtube-clone-react/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/YouTube_Logo_2017.svg.webp": "/youtube-clone-react/static/media/YouTube_Logo_2017.svg.8718309416a8094e3bd4.webp",
-    "static/media/fa-v4compatibility.woff2": "/youtube-clone-react/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
+    "static/media/fa-v4compatibility.woff2": "/youtube-clone-react/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/youtube-clone-react/index.html",
-    "main.35da7ff9.css.map": "/youtube-clone-react/static/css/main.35da7ff9.css.map",
-    "main.b972cf71.js.map": "/youtube-clone-react/static/js/main.b972cf71.js.map"
+    "main.0c643843.css.map": "/youtube-clone-react/static/css/main.0c643843.css.map",
+    "main.df95b8c6.js.map": "/youtube-clone-react/static/js/main.df95b8c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.35da7ff9.css",
-    "static/js/main.b972cf71.js"
+    "static/css/main.0c643843.css",
+    "static/js/main.df95b8c6.js"
   ]
 }
