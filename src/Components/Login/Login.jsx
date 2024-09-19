@@ -73,10 +73,7 @@ export default function Login() {
       </Helmet>
       <section className="container py-3" id="Register">
         <h2>Login Now : </h2>
-        <div>
-          <p style={{marginBottom:"0"}}>username : kerolos1410@gmail.com</p>
-          <p>password : Admin123</p>
-        </div>
+        <span>(test.test123@test.com / Test123)</span>
         {error ? <div className="alert h5 fw-bold">{error}</div> : null}
         <form onSubmit={formik.handleSubmit} className="form">
           <div className="mb-2">
