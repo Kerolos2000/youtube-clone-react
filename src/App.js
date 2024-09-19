@@ -4,26 +4,26 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
-import Layout from "./Components/Layout/Layout";
-import Home from "./Components/Home/Home";
-import Search from "./Components/Search/Search";
 import Channel from "./Components/Channel/Channel";
-import Video from "./Components/Video/Video";
-import PlayListVideos from "./Components/PlayListVideos/PlayListVideos";
-import Login from "./Components/Login/Login";
-import Register from "./Components/Register/Register";
 import Forgotpassword from "./Components/Forgotpassword/Forgotpassword";
-import Resetpassword from "./Components/Resetpassword/Resetpassword";
-import Updatepassword from "./Components/Updatepassword/Updatepassword";
+import Home from "./Components/Home/Home";
+import Layout from "./Components/Layout/Layout";
+import Login from "./Components/Login/Login";
 import NotFound from "./Components/NotFound/NotFound";
+import PlayListVideos from "./Components/PlayListVideos/PlayListVideos";
+import Register from "./Components/Register/Register";
+import Resetpassword from "./Components/Resetpassword/Resetpassword";
+import Search from "./Components/Search/Search";
+import Updatepassword from "./Components/Updatepassword/Updatepassword";
+import Video from "./Components/Video/Video";
 
-import { UserDataContextProvider } from "./Context/userDataContext";
 import { SearchProvider } from "./Context/search";
+import { UserDataContextProvider } from "./Context/userDataContext";
 
 export default function App() {
   function IsUserNotLogin(props) {
     if (localStorage.getItem("userToken") === null) {
-      return <Navigate to={"/youtube-clone-react/login"} />;
+      return <Navigate to={"/login"} />;
     } else {
       return props.children;
     }
@@ -31,7 +31,7 @@ export default function App() {
 
   function IsUserLogin(props) {
     if (localStorage.getItem("userToken") !== null) {
-      return <Navigate to={"/youtube-clone-react/"} />;
+      return <Navigate to={"/"} />;
     } else {
       return props.children;
     }
@@ -39,7 +39,7 @@ export default function App() {
 
   let routes = createBrowserRouter([
     {
-      path: "youtube-clone-react",
+      path: "/",
       element: <Layout />,
       children: [
         {

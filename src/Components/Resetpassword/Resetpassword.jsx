@@ -1,11 +1,11 @@
-import { Formik, useFormik } from "formik";
-import * as Yup from "yup";
+import { useFormik } from "formik";
 import React, { useEffect, useState } from "react";
+import * as Yup from "yup";
 
 import axios from "axios";
+import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
 import MainBtn from "../MainBtn/MainBtn";
-import { Helmet } from "react-helmet";
 
 export default function Login() {
   const [islaoding, setIslaoding] = useState(false);
@@ -30,7 +30,7 @@ export default function Login() {
         setIslaoding(false);
         console.log(res);
         localStorage.setItem("userVerify", res.data.status);
-        navigate("/youtube-clone-react/update");
+        navigate("/update");
       })
       .catch((error) => {
         setIslaoding(false);

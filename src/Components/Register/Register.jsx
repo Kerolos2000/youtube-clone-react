@@ -1,11 +1,11 @@
-import { Formik, useFormik } from "formik";
-import * as Yup from "yup";
+import { useFormik } from "formik";
 import React, { useRef, useState } from "react";
+import * as Yup from "yup";
 // import usePostAxios from '../../Hooks/usePostaxios'
 import axios from "axios";
+import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
 import MainBtn from "../MainBtn/MainBtn";
-import { Helmet } from "react-helmet";
 
 export default function Register() {
   const [islaoding, setIslaoding] = useState(false);
@@ -22,7 +22,7 @@ export default function Register() {
         if (res.data.message === "success") {
           console.log("done");
           setIslaoding(false);
-          navigate("/youtube-clone-react/login");
+          navigate("/login");
         }
       })
       .catch((error) => {

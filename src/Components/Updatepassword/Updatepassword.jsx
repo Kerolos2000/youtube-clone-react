@@ -1,10 +1,10 @@
-import { Formik, useFormik } from "formik";
-import * as Yup from "yup";
-import React, { useRef, useState } from "react";
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom";
-import MainBtn from "../MainBtn/MainBtn";
+import { useFormik } from "formik";
+import React, { useRef, useState } from "react";
 import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router-dom";
+import * as Yup from "yup";
+import MainBtn from "../MainBtn/MainBtn";
 
 export default function Login() {
   const [islaoding, setIslaoding] = useState(false);
@@ -22,7 +22,7 @@ export default function Login() {
         console.log(res);
 
         setIslaoding(false);
-        navigate("/youtube-clone-react/login");
+        navigate("/login");
       })
       .catch((error) => {
         setIslaoding(false);

@@ -151,7 +151,7 @@ export default function Channel() {
                         className={`${style.allCard} col-sm-6 col-md-6 col-lg-4 col-xl-3`}
                       >
                         <Link
-                          to={`/youtube-clone-react/playListVideos/${item.id}`}
+                          to={`/playListVideos/${item.id}`}
                         >
                           <div className={style.card}>
                             <div className={style.imgX}>

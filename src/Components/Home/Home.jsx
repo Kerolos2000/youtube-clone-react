@@ -104,7 +104,7 @@ function HomePage() {
                 key={i}
               >
                 <div className={style.card}>
-                  <Link to={`/youtube-clone-react/video/${video.id}`}>
+                  <Link to={`/video/${video.id}`}>
                     <img
                       src={
                         video.snippet.thumbnails.medium.url ||
@@ -124,19 +124,19 @@ function HomePage() {
                       
                     </Avatar>
                     <div>
-                      <Link to={`/youtube-clone-react/video/${video.id}`}>
+                      <Link to={`/video/${video.id}`}>
                         <h2 className="h6 mb-1 fw-bolder">
                           {video.snippet.title}
                         </h2>
                       </Link>
                       <Link
-                        to={`/youtube-clone-react/channel/${video.snippet.channelId}`}
+                        to={`/channel/${video.snippet.channelId}`}
                       >
                         <p className={`small ${style.p}`}>
                           {video.snippet.channelTitle}
                         </p>
                       </Link>
-                      <Link to={`/youtube-clone-react/video/${video.id}`}>
+                      <Link to={`/video/${video.id}`}>
                         <p className={`small ${style.p}`}>
                           {formatDate(video.snippet.publishedAt)}
                         </p>

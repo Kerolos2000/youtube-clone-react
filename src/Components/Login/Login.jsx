@@ -26,7 +26,7 @@ export default function Login() {
           localStorage.setItem("userName", res.data.user.name);
           dataFromContext.saveUserData();
           setIslaoding(false);
-          navigate("/youtube-clone-react/");
+          navigate("/");
         }
       })
       .catch((error) => {

@@ -56,13 +56,13 @@ export default function NavbarComponent() {
   const navigate = useNavigate();
   function x() {
     if (inputRef.current.value !== "") {
-      navigate(`/youtube-clone-react/search/${inputRef.current.value}`);
+      navigate(`/search/${inputRef.current.value}`);
     }
   }
 
   function logout() {
     localStorage.removeItem("userToken");
-    navigate("/youtube-clone-react/login");
+    navigate("/login");
     dataX.setData(null);
   }
 
@@ -89,7 +89,7 @@ export default function NavbarComponent() {
             )}
 
             <Navbar.Brand className={style.navbarBrand}>
-              <Link className="h3" to={"/youtube-clone-react/"}>
+              <Link className="h3" to={"/"}>
                 <img src={logo} alt="youtube" className={style.logo} />
               </Link>
             </Navbar.Brand>
@@ -141,7 +141,7 @@ export default function NavbarComponent() {
               <Nav.Item className="nav-item">
                 <NavLink
                   className={`${style.navLink} nav-link`}
-                  to="/youtube-clone-react/login"
+                  to="/login"
                 >
                   Login
                 </NavLink>
@@ -149,7 +149,7 @@ export default function NavbarComponent() {
               <Nav.Item className="nav-item">
                 <NavLink
                   className={`${style.navLink} nav-link`}
-                  to="/youtube-clone-react/register"
+                  to="/register"
                 >
                   Register
                 </NavLink>
@@ -170,7 +170,7 @@ export default function NavbarComponent() {
               <MenuIcon />
             </Button>
             <Navbar.Brand className={style.navbarBrand}>
-              <Link className="h3" to={"/youtube-clone-react/"}>
+              <Link className="h3" to={"/"}>
                 <img src={logo} alt="youtube" className={style.logo} />
               </Link>
             </Navbar.Brand>

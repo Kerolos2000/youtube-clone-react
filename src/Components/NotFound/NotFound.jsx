@@ -1,11 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import notFound from "../../img/404 Error-pana.svg";
 import MainBtn from "../MainBtn/MainBtn";
-import { useNavigate } from "react-router-dom";
 export default function NotFound() {
   let navigate = useNavigate();
   function goToHome() {
-    navigate("/youtube-clone-react/");
+    navigate("/");
   }
   return (
     <>

@@ -46,7 +46,7 @@ export default function VideoComponent({
             <div className={style.chanalDetails}>
               <Avatar className="me-2" sx={{ width: 40, height: 40 }}></Avatar>
               <Link
-                to={`/youtube-clone-react/channel/${item.snippet.channelId}`}
+                to={`/channel/${item.snippet.channelId}`}
               >
                 <p className="m-0">{item.snippet.channelTitle}</p>
               </Link>
